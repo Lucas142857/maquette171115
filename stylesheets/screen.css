@@ -66,3 +66,84 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* Main file */
+/* Fonts */
+/* Variables */
+/* line 9, ../sass/_main.scss */
+* {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* line 14, ../sass/_main.scss */
+#wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #FFF;
+}
+
+/* line 24, ../sass/_main.scss */
+#header {
+  width: 100%;
+  height: 100px;
+  background-color: #00A0B0;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+}
+/* line 32, ../sass/_main.scss */
+#header .container {
+  margin: 0 auto;
+  width: 85%;
+}
+/* line 36, ../sass/_main.scss */
+#header .container #logo, #header .container nav {
+  line-height: 90px;
+}
+/* line 40, ../sass/_main.scss */
+#header .container #logo {
+  float: left;
+  font-size: xx-large;
+  font-weight: 600;
+}
+/* line 46, ../sass/_main.scss */
+#header .container nav {
+  line-height: 90px;
+  float: right;
+  font-weight: 700;
+}
+/* line 51, ../sass/_main.scss */
+#header .container nav ul {
+  display: flex;
+  flex-direction: row;
+}
+/* line 54, ../sass/_main.scss */
+#header .container nav ul li {
+  padding: 0 15px;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+/* line 58, ../sass/_main.scss */
+#header .container nav ul li:hover {
+  background-color: #FFF;
+}
+/* line 60, ../sass/_main.scss */
+#header .container nav ul li:hover a {
+  color: #6A4A3C;
+}
+/* line 67, ../sass/_main.scss */
+#header .container nav a {
+  color: #FFF;
+  text-decoration: none;
+}
+/* line 4, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_hover-link.scss */
+#header .container nav a:hover, #header .container nav a:focus {
+  text-decoration: underline;
+}
