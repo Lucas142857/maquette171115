@@ -78,6 +78,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 14, ../sass/_main.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 18, ../sass/_main.scss */
 #wrapper {
   width: 100%;
   height: 100%;
@@ -86,9 +91,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   color: #515151;
+  background-color: #e6e6e6;
 }
 
-/* line 24, ../sass/_main.scss */
+/* line 29, ../sass/_main.scss */
 #header {
   color: #FFF;
   width: 100%;
@@ -97,44 +103,44 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: fixed;
   top: 0;
 }
-/* line 32, ../sass/_main.scss */
+/* line 37, ../sass/_main.scss */
 #header .container {
   margin: 0 auto;
   width: 85%;
 }
 @media only screen and (max-width: 700px) {
-  /* line 32, ../sass/_main.scss */
+  /* line 37, ../sass/_main.scss */
   #header .container {
     width: 95%;
   }
 }
-/* line 39, ../sass/_main.scss */
+/* line 44, ../sass/_main.scss */
 #header .container #logo, #header .container nav {
   line-height: 100px;
 }
-/* line 43, ../sass/_main.scss */
+/* line 48, ../sass/_main.scss */
 #header .container #logo {
   float: left;
   font-size: xx-large;
   font-weight: 600;
 }
-/* line 49, ../sass/_main.scss */
+/* line 54, ../sass/_main.scss */
 #header .container nav {
   float: right;
   font-weight: 700;
 }
-/* line 53, ../sass/_main.scss */
+/* line 58, ../sass/_main.scss */
 #header .container nav ul {
   display: flex;
   flex-direction: row;
 }
 @media only screen and (max-width: 700px) {
-  /* line 53, ../sass/_main.scss */
+  /* line 58, ../sass/_main.scss */
   #header .container nav ul {
     flex-direction: column;
   }
 }
-/* line 61, ../sass/_main.scss */
+/* line 66, ../sass/_main.scss */
 #header .container nav ul li {
   padding: 0 15px;
   -moz-transition: all 0.2s ease-in-out;
@@ -142,15 +148,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 65, ../sass/_main.scss */
+/* line 70, ../sass/_main.scss */
 #header .container nav ul li:hover {
   background-color: #FFF;
 }
-/* line 67, ../sass/_main.scss */
+/* line 72, ../sass/_main.scss */
 #header .container nav ul li:hover a {
   color: #00B4FF;
 }
-/* line 74, ../sass/_main.scss */
+/* line 79, ../sass/_main.scss */
 #header .container nav a {
   color: inherit;
   text-decoration: none;
@@ -159,12 +165,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 #header .container nav a:hover, #header .container nav a:focus {
   text-decoration: underline;
 }
-/* line 77, ../sass/_main.scss */
+/* line 82, ../sass/_main.scss */
 #header .container nav a:hover {
   text-decoration: none;
 }
 @media only screen and (max-width: 700px) {
-  /* line 49, ../sass/_main.scss */
+  /* line 54, ../sass/_main.scss */
   #header .container nav {
     line-height: 23px;
   }
