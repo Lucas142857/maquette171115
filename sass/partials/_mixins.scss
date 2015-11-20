@@ -1,0 +1,20 @@
+/* Mixins */
+
+@mixin bp-large {
+  @media only screen and (min-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin bp-medium {
+  @media only screen and (max-width: 999px) {
+    @content;
+  }
+}
+
+@mixin bp-small {
+  @media only screen and (max-width: 700px) {
+    @content;
+  }
+}
+

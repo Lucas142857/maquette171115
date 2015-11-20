@@ -22,16 +22,19 @@
 }
 
 #header {
+  color: $headerColor;
 	width: 100%;
-  height: $header-height;
   background-color: $header-background-color;
-  padding: 5px;
+  padding: 0px 5px;
   position: fixed;
   top: 0;
   
   .container {
     margin: 0 auto;
     width: 85%;
+    @include bp-small {
+      width: 95%;
+    }
     
     #logo, nav {
       line-height: $header-line-height;
@@ -44,16 +47,20 @@
     }
     
     nav {
-      line-height: 90px;
       float: right;
       font-weight: $menu-font-weight;
       
       ul {
         display: flex;
         flex-direction: row;
+        
+        @include bp-small {
+          flex-direction: column;
+        }
+        
         li {
           padding: 0 15px;
-          @include transition(background-color 0.2s ease-in-out);
+          @include transition(all 0.2s ease-in-out);
           
           &:hover {
             background-color: #FFF;
@@ -65,8 +72,15 @@
       }
       
       a {
-        color: $mainColor;
+        color: inherit;
         @include hover-link;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      
+      @include bp-small {
+        line-height: 23px;
       }
     }
   }
